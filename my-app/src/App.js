@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Komponentaklase from "./Komponente/komponentaklase";
+import Logoperator from "./Komponente/logoperator";
+import Varijabla from "./Komponente/varijabla";
+import Zadaca from "./Komponente/zadaca";
 
 function App() {
+  const user = "Ivan Horvat";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Zadaca />
+      <Varijabla user={user} />
+      <Logoperator user={user} />
+      <Komponentaklase user={user} />
     </div>
   );
 }
 
 export default App;
+
+/* 1.	Potrebno je napraviti dvije komponente
+	2.	Glavna komponenta poziva drugu komponentu ConditionalRendering sa svojstvom (props) number
+	3.	U ovisnusti o poslanom broju treba ispisati drukčiji tekst
+	4.	Ako se pošalje nedefinirani broj, komponenta ConditionalRendering ništa ne ispisuje*/
