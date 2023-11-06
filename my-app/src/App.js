@@ -1,25 +1,28 @@
+// App.jsx
+import React from "react";
 import "./App.css";
-import Komponentaklase from "./Komponente/komponentaklase";
-import Logoperator from "./Komponente/logoperator";
-import Varijabla from "./Komponente/varijabla";
-import Zadaca from "./Komponente/zadaca";
+import Logo from "./Components/Logo";
+// Uvezi Logo komponentu
 
 function App() {
-  const user = "Ivan Horvat";
-
   return (
     <div className="App">
-      <Zadaca />
-      <Varijabla user={user} />
-      <Logoperator user={user} />
-      <Komponentaklase user={user} />
+      <header className="App-header">
+        <Logo /> {/* Koristi Logo komponentu */}
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
 
 export default App;
-
-/* 1.	Potrebno je napraviti dvije komponente
-	2.	Glavna komponenta poziva drugu komponentu ConditionalRendering sa svojstvom (props) number
-	3.	U ovisnusti o poslanom broju treba ispisati drukčiji tekst
-	4.	Ako se pošalje nedefinirani broj, komponenta ConditionalRendering ništa ne ispisuje*/
