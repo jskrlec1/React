@@ -1,4 +1,4 @@
-import "./App.css";
+/*import "./App.css";
 import StateFull from "./Components/StateFull";
 import MyCheckbox from "./Components/checkbox";
 import Counter from "./Components/counter";
@@ -25,6 +25,22 @@ function App() {
       <Counterr />
       <hr></hr>
       <StateFull />
+    </div>
+  );
+}
+
+export default App;*/
+import React from "react";
+import "./App.css";
+import Zadatak from "./Components/zadatak";
+import "./App.css";
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Zadatak />
+      </header>
     </div>
   );
 }
