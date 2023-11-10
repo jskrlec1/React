@@ -26,6 +26,9 @@ function Zadatak() {
   const handleIsTravelerChange = () => {
     setIsTraveler(!isTraveler);
   };
+  useEffect(() => {
+    alert("Dogodila se promjena");
+  }, [isTraveler]);
 
   const sayHello = () => {
     if (firstName && lastName) {

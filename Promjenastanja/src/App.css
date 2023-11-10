@@ -38,6 +38,7 @@
 }
 .person-info {
   text-align: left;
+
   display: flex;
   flex-direction: column;
 }
@@ -60,7 +61,7 @@
 
 .button-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin: 8px 0;
 }
