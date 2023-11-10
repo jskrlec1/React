@@ -30,16 +30,17 @@ function App() {
 }
 
 export default App;*/
+
 import React from "react";
-import "./App.css";
-import Zadatak from "./Components/zadatak";
-import "./App.css";
+//import "./App.css";
+//import Zadatak from "./Components/zadatak"; <UseState = Zadatak/>
+import UseState from "./Components/useState";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Zadatak />
+        <UseState />
       </header>
     </div>
   );
