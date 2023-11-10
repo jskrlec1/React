@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -14,13 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0854eb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(16px + 2vmin);
   color: white;
 }
 
@@ -35,12 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
-.person-info {
-  text-align: left;
 
+body {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.person-info {
+  text-align: center;
+  background-color: chartreuse;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .input-row {
@@ -48,14 +62,17 @@
   align-items: center;
   margin: 8px 0;
 }
+.input-row input {
+  color: red;
+}
 
 .input-label {
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 8px;
 }
 
 .message {
-  font-size: 16px;
+  font-size: 26px;
   margin: 8px 0;
 }
 

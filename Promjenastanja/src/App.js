@@ -14,7 +14,7 @@ import UnosTeksta from "./Components/unosTeksta";
 function App() {
   return (
     <div className="App">
-      {/* <Eventi />
+      { /*<Eventi />
       <KlasPromjenaState />
       <hr></hr>
       <Counter />
@@ -29,7 +29,8 @@ function App() {
       <hr></hr>
       <StateFull />
       <hr />
-      <EffectHook /> */
+      <EffectHook /> 
+      <hr />*/
       <Zadatak />}
     </div>
   );
@@ -38,15 +39,15 @@ function App() {
 export default App;
 
 /*import React from "react";
-//import "./App.css";
+import "./App.css";
 //import Zadatak from "./Components/zadatak"; <UseState = Zadatak/>
-import UseState from "./Components/useState";
+import Usestates from "./Components/usestates";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UseState />
+        <Usestates />
       </header>
     </div>
   );

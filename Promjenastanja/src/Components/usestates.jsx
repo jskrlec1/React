@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Zadatak = () => {
+const Usestates = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   // const [birthYear, setbirthYear] = useState(1960);
@@ -27,12 +27,13 @@ const Zadatak = () => {
       </label>
       <label>
         <input type="checkbox" checked={liked} onChange={handleChange} />
-        Putnik sam
+        Putnik sam?
       </label>
       <p>
         Bok, ja sam{" "}
         <b>
-          {fullName}, rođen sam {1960} i {liked ? "Putnik sam" : "nisam putnik"}
+          {fullName}, rođen sam {1960} i{" "}
+          {liked ? "putnik sam." : "nisam putnik."}
         </b>
       </p>
       <button onClick={() => alert("Bok " + fullName)}>Reci Bok osobi</button>
@@ -40,4 +41,4 @@ const Zadatak = () => {
   );
 };
 
-export default Zadatak;
+export default Usestates;
